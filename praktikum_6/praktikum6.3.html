@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum6.3</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(233, 111, 103);
+        }
+
+        #main {
+            display: flex;
+            margin-left: 100px;
+        }
+
+        #content {
+            display: flex;
+            margin-top: 160px;
+            margin-left: 20px;
+        }
+
+        #main>aside {
+            background: #217079;
+            width: 40vh;
+            margin-bottom: 15px;
+            margin-top: 15px;
+            padding:  180px 20px 50px 100px;
+        }
+
+        #main>article {
+            background-color: rgb(235, 81, 81);
+            width: 105vh;
+            height: 70vh;
+            margin: 15px;
+            
+        }
+
+        .box {
+            background-color: grey;
+            border-style: solid;
+            width: 30vh;
+            height: 30vh;
+            margin-right: 20px;
+        }
+
+        header,
+        footer {
+            margin-left: 100px;
+            background: #3dceaa;
+            height: 10vh;
+            width: 148vh;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header ALIGN="CENTER">Header</header>
+    <div id="main">
+        <aside>Aside</aside>
+        <article ALIGN="CENTER">Article
+            <div id="content">
+                <img class="box" src="red.jpg">
+                <img class="box" src="red.jpg">
+                <img class="box" src="red.jpg">
+            </div>
+        </article>
+    </div>
+    <footer ALIGN="CENTER">Footer</footer>
+</body>
+
+</html>
