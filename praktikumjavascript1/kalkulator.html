@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat Kalkulator</title>
+    
+    <script>
+        function hitung(){
+            let angka = Number(document.getElementById("nama").value);
+            let pergi = Number(document.getElementById("kelas").value);
+            let rumah = angka + pergi;
+            document.getElementById("pergi").value=rumah;
+        }
+    </script>
+</head>
+<body>
+    <fieldset>
+        <input type="angka" id="nama" value="" onchange="hitung()">
+        <br>+</br><input type="angka" id="kelas" value="" onchange="hitung()">
+        <br>=</br><input type="angka" id="pergi" value=""/>
+    </fieldset>
+</body>
+</html>
