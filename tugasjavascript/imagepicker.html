@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+</head>
+<body>
+    
+    <label for="wisata">Wisata : </label>
+    <select id="wisata">
+        <option value="Pulau">Pulau</option>
+        <option value="Sungai">Sungai</option>
+        <option value="Air Terjun">Air Terjun</option>
+        <option value="Pegunungan">Pegunungan</option>
+        <option value="Pantai">Pantai</option>
+
+    </select>
+    <button onclick="cetakGambar()">Cetak Gambar</button>
+    
+    <br><img id="gambar" src="">
+
+    <script>
+        
+        function cetakGambar() {
+            const hewan = document.getElementById('wisata');
+            const gambar = document.getElementById('gambar');
+
+            if (wisata.value === 'Pulau') {
+                gambar.src = 'https://cdns.klimg.com/merdeka.com/i/w/news/2021/10/21/1366484/670x335/10-pemandangan-keren-di-indonesia-wajib-dikunjungi-langsung.jpg'
+            }
+            if (wisata.value === 'Sungai') {
+                gambar.src = 'https://cdn.idntimes.com/content-images/community/2020/07/beautiful-river-in-india-a2d3c39fcfd8547a80c993abe0ed6e24_600x400.jpg'
+            }
+            if (wisata.value === 'Air Terjun') {
+                gambar.src = 'https://asset.kompas.com/crops/wwtDobQaGDYhGivjtQn9_hNuzhU=/46x9:1910x1252/750x500/data/photo/2021/03/18/60534e42d7c6f.jpg'
+            }
+            if (wisata.value === 'Pegunungan') {
+                gambar.src = 'https://www.jalajahnusae.com/wp-content/uploads/2018/12/Gunung-Dempo.jpg'
+            }
+            if (wisata.value === 'Pantai') {
+                gambar.src = 'https://cdns.klimg.com/dream.co.id/resized/640x320/news/2019/11/02/121684/tapaki-kesejukan-di-5-pantai-pasuruan-yang-menyenangkan-1911023.jpg'
+            }
+        }
+
+        
+    </script>
+</body>
+</html>

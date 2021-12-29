@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.isi-login{
+    margin: 150px 100px 100px 500px;
+    background: url(https://i.ytimg.com/vi/E_-Gm5vaaec/maxresdefault.jpg)
+}
+
+.data-input{
+    width: 30%;
+}
